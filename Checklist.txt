@@ -1,0 +1,41 @@
+Checklist:
+
+Movement/Jump - DONE
+Interact - DONE
+Player Model -
+
+Interactable - DONE
+Physics - DONE
+
+Enemy 1 Logic -
+Enemy 1 Model -
+Enemy 2 Logic-
+Enemy 2 Model -
+Boss Logic -
+Boss Model -
+
+Health - DONE
+Coin Logic -
+Coin Model -
+
+Score Widget -
+Pause Menu -
+
+Level Design -
+Moving Platforms -
+
+
+Things added that weren't in the Lessons:
+
+- Changed the camera to a third person view
+
+- Adjusted the CharMoveComp in BP_PlayerChar so that:
+	- Gravity and Jump Z Velocity is increased for higher jumping.
+	- Air Control while jumping is greatly increased for more precise jumping.
+	- Falling Lateral Friction is increased for more precise sideways movement while jumping.
+
+- Added a taller invisible box as a parent to the physics cube to increase grab height detection.
+
+- Added an enemy that deals damage on contact, and is only defeated by jumping on its head.
+
+- Created a DamageCooldown variable that puts damage on a 3 second cooldown after taking damage.
