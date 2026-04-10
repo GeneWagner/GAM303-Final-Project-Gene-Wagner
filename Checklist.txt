@@ -1,5 +1,5 @@
 Checklist:
-
+---
 
 
 TO-DO:
@@ -7,17 +7,19 @@ TO-DO:
 Movement/Jump - DONE
 Interact - DONE
 Player Logic - DONE
-Player Model - INCOMPLETE
+Player Model - DONE
 
 Interactable - DONE
 Physics - DONE
+Button - DONE
+Gate - DONE
 
 Enemy 1 Logic - DONE
 Enemy 1 Model - DONE
 Enemy 2 Logic - DONE
 Enemy 2 Model - DONE
-Boss Logic -
-Boss Model -
+Boss Logic - DONE
+Boss Model - DONE
 
 Health - DONE
 Coin Logic - DONE
@@ -26,28 +28,17 @@ Coin Model - DONE
 Score Widget -
 Pause Menu -
 
-Level Design -
-Moving Platforms -
+Tutorial - DONE
+Level Design - DONE
+Moving Platforms - DONE
 
-
-Things added that weren't in the Lessons:
-
-- Changed the camera to a third person view
-
-- Adjusted the CharMoveComp in BP_PlayerChar so that:
-	- Gravity and Jump Z Velocity is increased for higher jumping.
-	- Air Control while jumping is greatly increased for more precise jumping.
-	- Falling Lateral Friction is increased for more precise sideways movement while jumping.
-
-- Added a taller invisible box as a parent to the physics cube to increase grab height detection.
-
-- Added an enemy that deals damage on contact, and is only defeated by jumping on its head.
-
-- Created a DamageCooldown variable that puts damage on a 3 second cooldown after taking damage.
-
-- Adjusted Turret (Enemy2) projectile distance, speed, gravity, and ROF.
-
-- Added Floating and Rotating animation to Enemy2.
+(Fix the relative location in the Gate animation)
 
 
 BUGS:
+
+- Enemy2 rotation is a bit wonky if the player dances around the enemy.
+
+- Gate can rarely bug out during its open/close if player and cube go onto the button at the same time. Doesn't always happen, and the player needs to intentionally do this.
+
+- After the first time the player grabs a physics cube, grabbing it again under certain conditions can cause the player to move backward using the W key, at a 5x speed.
